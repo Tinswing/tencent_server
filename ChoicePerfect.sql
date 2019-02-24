@@ -35,7 +35,7 @@ CREATE TABLE `avatar_history` (
 
 LOCK TABLES `avatar_history` WRITE;
 /*!40000 ALTER TABLE `avatar_history` DISABLE KEYS */;
-INSERT INTO `avatar_history` VALUES (1,'jkhjlhj','2018-12-23 00:00:00');
+INSERT INTO `avatar_history` VALUES (1,'jkhjlhj','2018-12-23 00:00:00'),(1,'jkhjlhj','2018-12-23 00:00:00');
 /*!40000 ALTER TABLE `avatar_history` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -125,7 +125,7 @@ CREATE TABLE `tb_SpecName` (
   `indexx` tinyint(4) NOT NULL,
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -134,7 +134,7 @@ CREATE TABLE `tb_SpecName` (
 
 LOCK TABLES `tb_SpecName` WRITE;
 /*!40000 ALTER TABLE `tb_SpecName` DISABLE KEYS */;
-INSERT INTO `tb_SpecName` VALUES (1,'颜色分类',7,1,'2019-02-15 21:33:36'),(2,'套餐类型',7,2,'2019-02-15 21:33:36'),(3,'颜色分类',9,1,'2019-02-15 23:10:08'),(4,'套餐类型',9,2,'2019-02-15 23:10:08'),(5,'颜色分类',8,1,'2019-02-15 23:11:00'),(6,'套餐类型',8,2,'2019-02-15 23:11:00');
+INSERT INTO `tb_SpecName` VALUES (1,'颜色分类',7,1,'2019-02-15 21:33:36'),(2,'套餐类型',7,2,'2019-02-15 21:33:36'),(3,'颜色分类',9,1,'2019-02-15 23:10:08'),(4,'套餐类型',9,2,'2019-02-15 23:10:08'),(5,'颜色分类',8,1,'2019-02-15 23:11:00'),(6,'套餐类型',8,2,'2019-02-15 23:11:00'),(7,'颜色分类',12,1,'2019-02-19 14:49:21'),(8,'套餐类型',12,2,'2019-02-19 14:49:21'),(9,'尺码',13,1,'2019-02-19 16:30:35'),(10,'颜色',13,2,'2019-02-19 16:30:35');
 /*!40000 ALTER TABLE `tb_SpecName` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -153,7 +153,7 @@ CREATE TABLE `tb_SpecValue` (
   `specValue` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -162,7 +162,7 @@ CREATE TABLE `tb_SpecValue` (
 
 LOCK TABLES `tb_SpecValue` WRITE;
 /*!40000 ALTER TABLE `tb_SpecValue` DISABLE KEYS */;
-INSERT INTO `tb_SpecValue` VALUES (1,7,1,1,'G7尊贵黑','2019-02-15 21:41:46'),(2,7,1,2,'G7尊贵白','2019-02-15 21:41:46'),(3,7,2,3,'标配版三:i7-8750H 8GB 128G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(4,7,2,4,'定制版三:i7-8750H 16G 256G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(5,7,2,5,'定制版四:i7-8750H 16G 512G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(10,8,1,1,'黑色','2019-02-15 22:38:38'),(11,8,2,2,'GX10-CR9 Plus：i9-9900K/RTX2080/2TB+512G SSD/16G/72%色域144Hz IPS高清屏','2019-02-15 22:38:38'),(12,8,2,3,'GX10-CR7 PRO：i7-9700K/RTX2080/2TB+512G SSD/16G/72%色域144Hz IPS高清屏','2019-02-15 22:38:38'),(13,8,2,4,'GX9-CR5S1：i5-8400/RTX2070/512G SSD/8G/94%色域120Hz电竞屏','2019-02-15 22:38:38'),(14,9,1,1,'银色','2019-02-15 23:16:46'),(15,9,2,2,'官方标配:i5-8250U 8GB内存 256G固态硬盘 XPS13','2019-02-15 23:16:46'),(16,9,2,3,'升级版一:i5-8250U 8GB内存 512G固态硬盘 XPS13','2019-02-15 23:16:46'),(17,9,2,4,'标配版一:i7-8550U 8GB内存 256G固态硬盘 XPS13','2019-02-15 23:16:46'),(18,9,2,5,'标配版二:i7-8550U 16G内存 512G固态硬盘 XPS13','2019-02-15 23:16:46'),(19,9,2,6,'定制版一:i5-8300H 16G内存 128G固态+1T GTX1050-4G','2019-02-15 23:16:46'),(20,9,2,7,'定制版二:i5-8300H 16G内存 256G固态+1T GTX1050-4G','2019-02-15 23:16:46');
+INSERT INTO `tb_SpecValue` VALUES (1,7,1,1,'G7尊贵黑','2019-02-15 21:41:46'),(2,7,1,2,'G7尊贵白','2019-02-15 21:41:46'),(3,7,2,3,'标配版三:i7-8750H 8GB 128G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(4,7,2,4,'定制版三:i7-8750H 16G 256G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(5,7,2,5,'定制版四:i7-8750H 16G 512G PCIE固态+1T RTX2060 6G独显','2019-02-15 21:41:46'),(10,8,1,1,'黑色','2019-02-15 22:38:38'),(11,8,2,2,'GX10-CR9 Plus：i9-9900K/RTX2080/2TB+512G SSD/16G/72%色域144Hz IPS高清屏','2019-02-15 22:38:38'),(12,8,2,3,'GX10-CR7 PRO：i7-9700K/RTX2080/2TB+512G SSD/16G/72%色域144Hz IPS高清屏','2019-02-15 22:38:38'),(13,8,2,4,'GX9-CR5S1：i5-8400/RTX2070/512G SSD/8G/94%色域120Hz电竞屏','2019-02-15 22:38:38'),(14,9,1,1,'银色','2019-02-15 23:16:46'),(15,9,2,2,'官方标配:i5-8250U 8GB内存 256G固态硬盘 XPS13','2019-02-15 23:16:46'),(16,9,2,3,'升级版一:i5-8250U 8GB内存 512G固态硬盘 XPS13','2019-02-15 23:16:46'),(17,9,2,4,'标配版一:i7-8550U 8GB内存 256G固态硬盘 XPS13','2019-02-15 23:16:46'),(18,9,2,5,'标配版二:i7-8550U 16G内存 512G固态硬盘 XPS13','2019-02-15 23:16:46'),(19,9,2,6,'定制版一:i5-8300H 16G内存 128G固态+1T GTX1050-4G','2019-02-15 23:16:46'),(20,9,2,7,'定制版二:i5-8300H 16G内存 256G固态+1T GTX1050-4G','2019-02-15 23:16:46'),(21,12,1,1,'黑色','2019-02-19 14:49:21'),(22,12,2,2,'官方标配','2019-02-19 14:49:21'),(23,12,2,3,'定制A','2019-02-19 14:49:21'),(24,13,1,1,'XL','2019-02-19 16:30:35'),(25,13,2,2,'黑色','2019-02-19 16:30:35'),(26,13,2,3,'米色','2019-02-19 16:30:35');
 /*!40000 ALTER TABLE `tb_SpecValue` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,9 +179,11 @@ CREATE TABLE `tb_address` (
   `receiveName` varchar(20) NOT NULL,
   `address` varchar(100) NOT NULL,
   `phone` varchar(13) NOT NULL,
+  `postcode` char(6) NOT NULL,
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `isDefault` bit(1) NOT NULL DEFAULT b'0',
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -190,6 +192,7 @@ CREATE TABLE `tb_address` (
 
 LOCK TABLES `tb_address` WRITE;
 /*!40000 ALTER TABLE `tb_address` DISABLE KEYS */;
+INSERT INTO `tb_address` VALUES (1,2,'马云','中国四川省成都市武侯区xx路12号','13811111111','610041','2019-02-22 10:01:05',_binary '\0');
 /*!40000 ALTER TABLE `tb_address` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -341,7 +344,7 @@ CREATE TABLE `tb_goodDetail` (
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `isDisable` bit(1) DEFAULT b'0',
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,7 +353,7 @@ CREATE TABLE `tb_goodDetail` (
 
 LOCK TABLES `tb_goodDetail` WRITE;
 /*!40000 ALTER TABLE `tb_goodDetail` DISABLE KEYS */;
-INSERT INTO `tb_goodDetail` VALUES (1,7,88,_binary '\0',10999,1,'2019-02-15 21:48:07',_binary '\0'),(2,7,12,_binary '\0',11699,2,'2019-02-15 21:48:07',_binary '\0'),(3,7,34,_binary '\0',12199,3,'2019-02-15 21:48:07',_binary '\0'),(4,7,24,_binary '\0',10999,4,'2019-02-15 21:48:07',_binary '\0'),(5,7,46,_binary '\0',11699,5,'2019-02-15 21:48:07',_binary '\0'),(6,7,12,_binary '\0',12199,6,'2019-02-15 21:48:07',_binary '\0'),(7,8,60,_binary '\0',25999,1,'2019-02-15 22:40:32',_binary '\0'),(8,8,46,_binary '\0',22999,2,'2019-02-15 22:40:32',_binary '\0'),(9,8,23,_binary '\0',10999,3,'2019-02-15 22:40:32',_binary '\0'),(10,9,6,_binary '\0',7299,1,'2019-02-15 23:16:54',_binary '\0'),(11,9,12,_binary '\0',7699,2,'2019-02-15 23:16:54',_binary '\0'),(12,9,9,_binary '\0',8699,3,'2019-02-15 23:16:54',_binary '\0'),(13,9,13,_binary '\0',9299,4,'2019-02-15 23:16:54',_binary '\0'),(14,9,13,_binary '\0',9899,5,'2019-02-15 23:16:54',_binary '\0'),(15,9,11,_binary '\0',10199,6,'2019-02-15 23:16:54',_binary '\0');
+INSERT INTO `tb_goodDetail` VALUES (1,7,88,_binary '\0',10999,1,'2019-02-15 21:48:07',_binary '\0'),(2,7,12,_binary '\0',11799,2,'2019-02-15 21:48:07',_binary '\0'),(3,7,34,_binary '\0',12799,3,'2019-02-15 21:48:07',_binary '\0'),(4,7,24,_binary '\0',10999,4,'2019-02-15 21:48:07',_binary '\0'),(5,7,46,_binary '\0',11699,5,'2019-02-15 21:48:07',_binary '\0'),(6,7,12,_binary '\0',12199,6,'2019-02-15 21:48:07',_binary '\0'),(7,8,60,_binary '\0',25999,1,'2019-02-15 22:40:32',_binary '\0'),(8,8,46,_binary '\0',22999,2,'2019-02-15 22:40:32',_binary '\0'),(9,8,23,_binary '\0',10999,3,'2019-02-15 22:40:32',_binary '\0'),(10,9,6,_binary '\0',7299,1,'2019-02-15 23:16:54',_binary '\0'),(11,9,12,_binary '\0',7699,2,'2019-02-15 23:16:54',_binary '\0'),(12,9,9,_binary '\0',8699,3,'2019-02-15 23:16:54',_binary '\0'),(13,9,13,_binary '\0',9299,4,'2019-02-15 23:16:54',_binary '\0'),(14,9,13,_binary '\0',9899,5,'2019-02-15 23:16:54',_binary '\0'),(15,9,11,_binary '\0',10199,6,'2019-02-15 23:16:54',_binary '\0'),(16,12,12,_binary '\0',8899,1,'2019-02-19 14:49:22',_binary '\0'),(17,12,8,_binary '\0',9999,2,'2019-02-19 14:49:22',_binary '\0'),(18,13,120,_binary '\0',579,1,'2019-02-19 16:30:35',_binary '\0'),(19,13,114,_binary '\0',579,2,'2019-02-19 16:30:35',_binary '\0');
 /*!40000 ALTER TABLE `tb_goodDetail` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -374,7 +377,7 @@ CREATE TABLE `tb_goodPicture` (
 
 LOCK TABLES `tb_goodPicture` WRITE;
 /*!40000 ALTER TABLE `tb_goodPicture` DISABLE KEYS */;
-INSERT INTO `tb_goodPicture` VALUES (7,'O1CN01oWYdbg1iLPbMDDvwx_!!2656954396.jpg',1),(7,'O1CN018ddt7c1iLPbOzaQnn_!!2656954396.jpg',2),(7,'O1CN01Yziugt1iLPbAZADyc_!!2656954396.jpg',3),(7,'O1CN01grX2jp1iLPZsxAdW2_!!2656954396.jpg',4),(7,'O1CN011iLPYpa8XL2AqHL_!!2656954396.jpg',5),(7,'O1CN011iLPZsiIkRprUpo_!!2656954396.jpg',6),(7,'O1CN011iLPYjWoWccXnSK_!!2656954396.jpg',7),(7,'O1CN011iLPa1VBgwymagI_!!2656954396.jpg',8),(7,'O1CN01GAucBA1iLPZqM7bC6_!!2656954396.jpg',9),(7,'O1CN011iLPZqvWIDU2QSv_!!2656954396.jpg',10),(7,'TB2Bj0mfZyYBuNkSnfoXXcWgVXa_!!2656954396.jpg',11),(7,'TB2e1Y_omBYBeNjy0FeXXbnmFXa_!!2656954396.jpg',12),(8,'O1CN01MvqDRA1PbvB7Pclzn_!!255921860.jpg',1),(8,'O1CN01kTt5Bt1PbvBBWzQKj_!!255921860.jpg',2),(8,'O1CN01mECKv01PbvBAdUN2N_!!255921860.jpg',3),(8,'O1CN01aBtlGt1PbvB9zM5fn_!!255921860.jpg',4),(8,'O1CN01TMgyOv1PbvB378dxu_!!255921860.jpg',5),(8,'O1CN01lca2Ir1PbvB9YwDvA_!!255921860.jpg',6),(8,'O1CN01IIFSC11PbvBBl0Cpc_!!255921860.jpg',7),(8,'O1CN01JiKlc91PbvB8CrclQ_!!255921860.jpg',8),(8,'O1CN01qovwLk1PbvB9Z0NlI_!!255921860.jpg',9),(8,'O1CN01rZKHMI1PbvBBCupLj_!!255921860.jpg',10),(8,'O1CN01zXhTJW1PbvB8CthfF_!!255921860.jpg',11),(8,'TB2ws56dTcCL1FjSZFPXXXZgpXa_!!255921860.jpg',12),(9,'O1CN01r6tMUo1iLPbID80cn_!!2656954396.jpg',1),(9,'O1CN011iPYY71iLPbHZdKz4_!!2656954396.jpg',2),(9,'O1CN01D5fEwe1iLPb73sXSe_!!2656954396.jpg',3),(9,'O1CN015FSq781iLPaKu1mhy_!!2656954396.jpg',4),(9,'O1CN01fM8Yxi1iLPa7xNStv_!!2656954396.jpg',5),(9,'O1CN011iLPYuFUZn2el7B_!!2656954396.jpg',6),(9,'O1CN011iLPYvagmfOwGLv_!!2656954396.jpg',7),(9,'O1CN011iLPZqMFO1gzoy8_!!2656954396.jpg',8),(9,'O1CN011iLPYvmuY87xCmg_!!2656954396.jpg',9),(9,'O1CN011iLPYwKE1NQCXF3_!!2656954396.jpg',10),(9,'O1CN011iLPYvxRNTTUkAZ_!!2656954396.jpg',11),(9,'O1CN011iLPYuh31JgV0Z0_!!2656954396.jpg',12),(9,'O1CN011iLPYwWsclAN8RW_!!2656954396.jpg',13),(9,'O1CN011iLPYvJi8OEox7p_!!2656954396.jpg',14),(9,'O1CN011iLPYuFUF6NLPMs_!!2656954396.jpg',15),(9,'O1CN011iLPZx0JCYnFceu_!!2656954396.jpg',16),(9,'O1CN011iLPYuzSyndkf7h_!!2656954396.jpg',17),(9,'O1CN011iLPYtUgcM8HlqO_!!2656954396.jpg',18),(9,'TB1.CUdsY9YBuNjy0FgXXcxcXXa-1572-394.jpg',19);
+INSERT INTO `tb_goodPicture` VALUES (7,'O1CN01oWYdbg1iLPbMDDvwx_!!2656954396.jpg',1),(7,'O1CN018ddt7c1iLPbOzaQnn_!!2656954396.jpg',2),(7,'O1CN01Yziugt1iLPbAZADyc_!!2656954396.jpg',3),(7,'O1CN01grX2jp1iLPZsxAdW2_!!2656954396.jpg',4),(7,'O1CN011iLPYpa8XL2AqHL_!!2656954396.jpg',5),(7,'O1CN011iLPZsiIkRprUpo_!!2656954396.jpg',6),(7,'O1CN011iLPYjWoWccXnSK_!!2656954396.jpg',7),(7,'O1CN011iLPa1VBgwymagI_!!2656954396.jpg',8),(7,'O1CN01GAucBA1iLPZqM7bC6_!!2656954396.jpg',9),(7,'O1CN011iLPZqvWIDU2QSv_!!2656954396.jpg',10),(7,'TB2Bj0mfZyYBuNkSnfoXXcWgVXa_!!2656954396.jpg',11),(7,'TB2e1Y_omBYBeNjy0FeXXbnmFXa_!!2656954396.jpg',12),(8,'O1CN01MvqDRA1PbvB7Pclzn_!!255921860.jpg',1),(8,'O1CN01kTt5Bt1PbvBBWzQKj_!!255921860.jpg',2),(8,'O1CN01mECKv01PbvBAdUN2N_!!255921860.jpg',3),(8,'O1CN01aBtlGt1PbvB9zM5fn_!!255921860.jpg',4),(8,'O1CN01TMgyOv1PbvB378dxu_!!255921860.jpg',5),(8,'O1CN01lca2Ir1PbvB9YwDvA_!!255921860.jpg',6),(8,'O1CN01IIFSC11PbvBBl0Cpc_!!255921860.jpg',7),(8,'O1CN01JiKlc91PbvB8CrclQ_!!255921860.jpg',8),(8,'O1CN01qovwLk1PbvB9Z0NlI_!!255921860.jpg',9),(8,'O1CN01rZKHMI1PbvBBCupLj_!!255921860.jpg',10),(8,'O1CN01zXhTJW1PbvB8CthfF_!!255921860.jpg',11),(8,'TB2ws56dTcCL1FjSZFPXXXZgpXa_!!255921860.jpg',12),(9,'O1CN01r6tMUo1iLPbID80cn_!!2656954396.jpg',1),(9,'O1CN011iPYY71iLPbHZdKz4_!!2656954396.jpg',2),(9,'O1CN01D5fEwe1iLPb73sXSe_!!2656954396.jpg',3),(9,'O1CN015FSq781iLPaKu1mhy_!!2656954396.jpg',4),(9,'O1CN01fM8Yxi1iLPa7xNStv_!!2656954396.jpg',5),(9,'O1CN011iLPYuFUZn2el7B_!!2656954396.jpg',6),(9,'O1CN011iLPYvagmfOwGLv_!!2656954396.jpg',7),(9,'O1CN011iLPZqMFO1gzoy8_!!2656954396.jpg',8),(9,'O1CN011iLPYvmuY87xCmg_!!2656954396.jpg',9),(9,'O1CN011iLPYwKE1NQCXF3_!!2656954396.jpg',10),(9,'O1CN011iLPYvxRNTTUkAZ_!!2656954396.jpg',11),(9,'O1CN011iLPYuh31JgV0Z0_!!2656954396.jpg',12),(9,'O1CN011iLPYwWsclAN8RW_!!2656954396.jpg',13),(9,'O1CN011iLPYvJi8OEox7p_!!2656954396.jpg',14),(9,'O1CN011iLPYuFUF6NLPMs_!!2656954396.jpg',15),(9,'O1CN011iLPZx0JCYnFceu_!!2656954396.jpg',16),(9,'O1CN011iLPYuzSyndkf7h_!!2656954396.jpg',17),(9,'O1CN011iLPYtUgcM8HlqO_!!2656954396.jpg',18),(9,'TB1.CUdsY9YBuNjy0FgXXcxcXXa-1572-394.jpg',19),(12,'WKPMGvFiKE_97966710.jpg',1),(12,'WKPMGvFiKE_39979246.jpg',2),(12,'WKPMGvFiKE_38544509.jpg',3),(12,'WKPMGvFiKE_84432622.jpg',4),(12,'WKPMGvFiKE_68268897.jpg',5),(12,'WKPMGvFiKE_74289677.jpg',6),(12,'WKPMGvFiKE_66911606.jpg',7),(12,'WKPMGvFiKE_25749806.jpg',8),(12,'WKPMGvFiKE_99361075.jpg',9),(12,'WKPMGvFiKE_25250023.jpg',10),(12,'WKPMGvFiKE_76542562.jpg',11),(12,'WKPMGvFiKE_95798552.jpg',12),(13,'uDXcqSRgz4_74953854.jpg',1),(13,'uDXcqSRgz4_18151854.jpg',2),(13,'uDXcqSRgz4_09627179.jpg',3),(13,'uDXcqSRgz4_53839673.jpg',4),(13,'uDXcqSRgz4_78975292.jpg',5),(13,'uDXcqSRgz4_07053264.jpg',6),(13,'uDXcqSRgz4_44249136.jpg',7);
 /*!40000 ALTER TABLE `tb_goodPicture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -399,7 +402,7 @@ CREATE TABLE `tb_goodSpecConfig` (
 
 LOCK TABLES `tb_goodSpecConfig` WRITE;
 /*!40000 ALTER TABLE `tb_goodSpecConfig` DISABLE KEYS */;
-INSERT INTO `tb_goodSpecConfig` VALUES (7,1,1,1),(7,1,2,3),(7,2,1,1),(7,2,2,4),(7,3,1,1),(7,3,2,5),(7,4,1,2),(7,4,2,3),(7,5,1,2),(7,5,2,4),(7,6,1,2),(7,6,2,5),(8,1,1,1),(8,1,2,2),(8,2,1,1),(8,2,2,3),(8,3,1,1),(8,3,2,4),(9,5,1,1),(9,1,2,2),(9,2,1,1),(9,2,2,3),(9,3,1,1),(9,3,2,4),(9,4,1,1),(9,4,2,5),(9,6,1,1),(9,5,2,6),(9,1,1,1),(9,6,2,7);
+INSERT INTO `tb_goodSpecConfig` VALUES (7,1,1,1),(7,1,2,3),(7,2,1,1),(7,2,2,4),(7,3,1,1),(7,3,2,5),(7,4,1,2),(7,4,2,3),(7,5,1,2),(7,5,2,4),(7,6,1,2),(7,6,2,5),(8,1,1,1),(8,1,2,2),(8,2,1,1),(8,2,2,3),(8,3,1,1),(8,3,2,4),(9,6,1,1),(9,1,2,2),(9,2,1,1),(9,2,2,3),(9,3,1,1),(9,3,2,4),(9,4,1,1),(9,4,2,5),(9,5,1,1),(9,5,2,6),(9,1,1,1),(9,6,2,7),(12,1,1,1),(12,1,2,2),(12,2,1,1),(12,2,2,3),(13,1,1,1),(13,1,2,2),(13,2,1,1),(13,2,2,3);
 /*!40000 ALTER TABLE `tb_goodSpecConfig` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -426,8 +429,9 @@ CREATE TABLE `tb_goods` (
   `detailId` int(11) DEFAULT NULL COMMENT '引用详细类别表外键',
   `logo` varchar(50) DEFAULT 'default.jpg',
   `goodno` varchar(20) DEFAULT NULL,
+  `auditTime` datetime DEFAULT NULL,
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -436,7 +440,7 @@ CREATE TABLE `tb_goods` (
 
 LOCK TABLES `tb_goods` WRITE;
 /*!40000 ALTER TABLE `tb_goods` DISABLE KEYS */;
-INSERT INTO `tb_goods` VALUES (2,6,42,1,'2018新款 Apple/苹果 MacBook Pro 13.3英寸四核i5 512GB轻薄便携笔记本电脑 支持Touch Bar','china',13888,0,_binary '\0',1,NULL,'2019-02-15 16:13:42',385,'default.jpg',NULL),(3,6,42,1,'Asus/华硕 灵耀S2代S4300FN轻薄便携商务办公游戏笔记本电脑8代i5超薄全面屏14英寸男女学生手提超极本2018款','china',13888,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',385,'default.jpg',NULL),(4,6,42,1,'外星人alienware17R5 17.3英寸八代六核i7-8750H GTX1060独显吃鸡游戏笔记本电脑ALW17C-3738戴尔','china',12499,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL),(5,6,42,1,'Hasee/神舟 战神Z7-KP7GC/SC 八代i7吃鸡GTX1060 6G独显15.6英寸IPS固态硬盘8G内存学生手提游戏本笔记本电脑','china',7199,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL),(6,6,42,1,'Lenovo/联想 拯救者 Y7000 15.6英寸游戏本笔记本电脑 i5轻薄独显','china',5499,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL),(7,6,42,1,'Dell/戴尔 G7 i7独显7588高配电竞游匣8代六核i7标压GTX1060 6G独显G5学生吃鸡G3笔记本电脑15.6英寸游戏本','china',12899,0,_binary '\0',1,NULL,'2019-02-15 17:03:07',390,'TB1n26eXlgXBuNjt_hNdquEiFXa_052200.jpg',NULL),(8,6,42,1,'Hasee/神舟 战神GX10/GX9 九代i9-9900K吃鸡RTX2080独显17.3英寸144Hz学生固态手提笔记本电脑电竞游戏本','china',10999,0,_binary '\0',1,NULL,'2019-02-15 22:22:29',390,'TB1lnEQpxTpK1RjSZFKIZq2wXXa_093944.jpg',NULL),(9,6,42,1,'XPS15 8代 Dell/戴尔 XPS15 9560 9570 XPS13-9360 八代超极本超薄游戏办公商务便携笔记本电脑微边框','china',10999,0,_binary '\0',1,NULL,'2019-02-15 22:57:11',390,'TB1zgK4wk9WBuNjSspeww5z5VXa_050444.jpg',NULL);
+INSERT INTO `tb_goods` VALUES (2,6,42,1,'2018新款 Apple/苹果 MacBook Pro 13.3英寸四核i5 512GB轻薄便携笔记本电脑 支持Touch Bar','china',13888,0,_binary '\0',1,NULL,'2019-02-15 16:13:42',385,'default.jpg',NULL,NULL),(3,6,42,1,'Asus/华硕 灵耀S2代S4300FN轻薄便携商务办公游戏笔记本电脑8代i5超薄全面屏14英寸男女学生手提超极本2018款','china',13888,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',385,'default.jpg',NULL,NULL),(4,6,42,1,'外星人alienware17R5 17.3英寸八代六核i7-8750H GTX1060独显吃鸡游戏笔记本电脑ALW17C-3738戴尔','china',12499,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL,NULL),(5,6,42,1,'Hasee/神舟 战神Z7-KP7GC/SC 八代i7吃鸡GTX1060 6G独显15.6英寸IPS固态硬盘8G内存学生手提游戏本笔记本电脑','china',7199,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL,NULL),(6,6,42,1,'Lenovo/联想 拯救者 Y7000 15.6英寸游戏本笔记本电脑 i5轻薄独显','china',5499,0,_binary '\0',1,NULL,'2019-02-15 16:19:28',390,'default.jpg',NULL,NULL),(7,6,42,1,'Dell/戴尔 G7 i7独显7588高配电竞游匣8代六核i7标压GTX1060 6G独显G5学生吃鸡G3笔记本电脑15.6英寸游戏本','china',12899,0,_binary '\0',1,NULL,'2019-02-15 17:03:07',390,'TB1n26eXlgXBuNjt_hNdquEiFXa_052200.jpg',NULL,NULL),(8,6,42,1,'Hasee/神舟 战神GX10/GX9 九代i9-9900K吃鸡RTX2080独显17.3英寸144Hz学生固态手提笔记本电脑电竞游戏本','china',10999,0,_binary '\0',1,NULL,'2019-02-15 22:22:29',390,'TB1lnEQpxTpK1RjSZFKIZq2wXXa_093944.jpg',NULL,NULL),(9,6,42,1,'XPS15 8代 Dell/戴尔 XPS15 9560 9570 XPS13-9360 八代超极本超薄游戏办公商务便携笔记本电脑微边框','china',10999,0,_binary '\0',1,NULL,'2019-02-15 22:57:11',390,'TB1zgK4wk9WBuNjSspeww5z5VXa_050444.jpg',NULL,NULL),(12,6,42,1,'ROG/玩家国度S5魔霸ROG吃鸡游戏本笔记本电脑轻薄15.6英寸GTX1060 6G独显','china',8999,0,_binary '\0',1,NULL,'2019-02-19 14:49:20',390,'WKPMGvFiKE_33889011.jpg','11550558961129',NULL),(13,1,3,2,'Champion男女情侣款左胸大“C”logo+右臂草写logo夹克羊羔绒外套','china',579,0,_binary '\0',0,NULL,'2019-02-19 16:30:35',13,'uDXcqSRgz4_12644891.jpg','21550565035174',NULL);
 /*!40000 ALTER TABLE `tb_goods` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -460,7 +464,7 @@ CREATE TABLE `tb_goodsmaillPicture` (
 
 LOCK TABLES `tb_goodsmaillPicture` WRITE;
 /*!40000 ALTER TABLE `tb_goodsmaillPicture` DISABLE KEYS */;
-INSERT INTO `tb_goodsmaillPicture` VALUES (7,'O1CN01Gkwa0d1iLPbIgIVIQ_!!2656954396.jpg',1),(7,'O1CN011iLPZTCGKRA6U08_!!2656954396.jpg',2),(7,'O1CN011iLPZPhWzKtumPP_!!2656954396.jpg',3),(7,'O1CN01rkdeul1iLPaqOzvVn_!!2656954396.jpg',4),(7,'O1CN011iLPZLLNlO4qy0g_!!2656954396.jpg',5),(8,'O1CN01SmI9t41PbvBDJjXja_!!255921860.jpg',1),(8,'O1CN01Bg2E0l1PbvBBsQcGa_!!255921860.jpg',2),(8,'O1CN01Bg2E0l1PbvBBsQcGa_!!255921860.jpg',3),(8,'O1CN01i3qsXU1PbvBDJj8nC_!!255921860.jpg',4),(9,'O1CN01kdYySQ1iLPbMQBoYT_!!0-item_pic.jpg',1),(9,'O1CN01ySOj8x1iLPZsnxMAz_!!2656954396.jpg',2),(9,'O1CN011iLPZRn1JoSdaJS_!!2656954396.jpg',3),(9,'O1CN01nooSfC1iLPaD98Cls_!!2656954396.jpg',4),(9,'TB255VjilDH8KJjSspnXXbNAVXa_!!2656954396.jpg',5);
+INSERT INTO `tb_goodsmaillPicture` VALUES (7,'O1CN01Gkwa0d1iLPbIgIVIQ_!!2656954396.jpg',1),(7,'O1CN011iLPZTCGKRA6U08_!!2656954396.jpg',2),(7,'O1CN011iLPZPhWzKtumPP_!!2656954396.jpg',3),(7,'O1CN01rkdeul1iLPaqOzvVn_!!2656954396.jpg',4),(7,'O1CN011iLPZLLNlO4qy0g_!!2656954396.jpg',5),(8,'O1CN01SmI9t41PbvBDJjXja_!!255921860.jpg',1),(8,'O1CN01Bg2E0l1PbvBBsQcGa_!!255921860.jpg',2),(8,'O1CN01i3qsXU1PbvBDJj8nC_!!255921860.jpg',3),(9,'O1CN01kdYySQ1iLPbMQBoYT_!!0-item_pic.jpg',1),(9,'O1CN01ySOj8x1iLPZsnxMAz_!!2656954396.jpg',2),(9,'O1CN011iLPZRn1JoSdaJS_!!2656954396.jpg',3),(9,'O1CN01nooSfC1iLPaD98Cls_!!2656954396.jpg',4),(9,'TB255VjilDH8KJjSspnXXbNAVXa_!!2656954396.jpg',5),(12,'WKPMGvFiKE_73144172.jpg',1),(12,'WKPMGvFiKE_27698515.jpg',2),(12,'WKPMGvFiKE_03667022.jpg',3),(12,'WKPMGvFiKE_37184243.jpg',4),(12,'WKPMGvFiKE_86988311.jpg',5),(13,'uDXcqSRgz4_37836476.jpg',1),(13,'uDXcqSRgz4_61151032.jpg',2),(13,'uDXcqSRgz4_81473942.jpg',3),(13,'uDXcqSRgz4_67433016.jpg',4);
 /*!40000 ALTER TABLE `tb_goodsmaillPicture` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -479,6 +483,7 @@ CREATE TABLE `tb_manager` (
   `overman` bit(1) NOT NULL DEFAULT b'0',
   `creaAccount` varchar(50) NOT NULL,
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `avatar` varchar(50) NOT NULL DEFAULT 'default.jpg',
   PRIMARY KEY (`_id`),
   UNIQUE KEY `account` (`account`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
@@ -490,7 +495,7 @@ CREATE TABLE `tb_manager` (
 
 LOCK TABLES `tb_manager` WRITE;
 /*!40000 ALTER TABLE `tb_manager` DISABLE KEYS */;
-INSERT INTO `tb_manager` VALUES (1,'飘到失联','$2a$10$MdH5f5eswbBWotTLrPK6oO8aPf.mVDccuCe7BP7Z28zGfz0CwfwyO','李文凯',_binary '','天生的','2019-01-18 13:28:06'),(2,'阿萨姆','$2a$10$NRILaDMp88teenbobDkHc.pcA2KD17O4eIuepFs8jeuMCBZ7XCYLG','喜马拉雅',_binary '','飘到失联','2019-01-18 13:48:16'),(3,'春华','$2a$10$ykHLoTKYdIfIOPGAJJP/H.qDXbLfqQmVMZhmE8aTo9ukIetrp20cS','秋黄',_binary '','飘到失联','2019-01-18 13:52:44');
+INSERT INTO `tb_manager` VALUES (1,'飘到失联','$2a$10$MdH5f5eswbBWotTLrPK6oO8aPf.mVDccuCe7BP7Z28zGfz0CwfwyO','李文凯',_binary '','天生的','2019-01-18 13:28:06','default.jpg'),(2,'阿萨姆','$2a$10$NRILaDMp88teenbobDkHc.pcA2KD17O4eIuepFs8jeuMCBZ7XCYLG','喜马拉雅',_binary '','飘到失联','2019-01-18 13:48:16','asamu.jpg'),(3,'春华','$2a$10$ykHLoTKYdIfIOPGAJJP/H.qDXbLfqQmVMZhmE8aTo9ukIetrp20cS','秋黄',_binary '','飘到失联','2019-01-18 13:52:44','default.jpg');
 /*!40000 ALTER TABLE `tb_manager` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -512,7 +517,7 @@ CREATE TABLE `tb_member` (
   `idCard` varchar(18) DEFAULT NULL,
   `gender` tinyint(4) DEFAULT '3',
   `email` varchar(50) DEFAULT NULL,
-  `avatar` varchar(50) DEFAULT 'avatar/default.jpg',
+  `avatar` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci DEFAULT 'default.jpg',
   `birth` datetime DEFAULT NULL,
   `entryDate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `lastLogin` datetime DEFAULT NULL,
@@ -530,7 +535,7 @@ CREATE TABLE `tb_member` (
 
 LOCK TABLES `tb_member` WRITE;
 /*!40000 ALTER TABLE `tb_member` DISABLE KEYS */;
-INSERT INTO `tb_member` VALUES (1,'春宵艳阳天','$2a$10$MdH5f5eswbBWotTLrPK6oO8aPf.mVDccuCe7BP7Z28zGfz0CwfwyO','13888888888',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-12 20:16:52',NULL,_binary '\0',_binary '\0'),(2,'踏遍三江六案','$2a$10$8/w/p1pI3Gk9GIRa0ERAwedmS85MSz8HPXDpHIAk1rCYPSj8u3RFW','13811111111',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-12 20:30:37',NULL,_binary '\0',_binary '\0'),(3,'大宝剑','$2a$10$4P8eVgsk5ebSHRuOBl0MRe5n7PKFkVQDkSkbesH1oC6CrtdltmO3S','17888888888',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-18 17:34:22',NULL,_binary '\0',_binary '\0'),(4,'天空','$2a$10$EuaXsHNna29WnkAWMYWAM.SUxRtewJh9GnvN7Ynii5i8qmYoe45Be','13822222222',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-21 13:50:01',NULL,_binary '\0',_binary '\0'),(5,'德玛西亚','$2a$10$ERCayzbDTJoxWlCPp5ePZ.ZvWTbEQHZwPZQPFs1Ll8tV4Iop/97YG','13833333333',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-21 14:04:16',NULL,_binary '\0',_binary '\0'),(6,'无尽的黑夜','$2a$10$8wCRkxK0txgu2N1BsCg31OMDvp7MjX8Qxua3fgy6mqcdsKJ8R/f4G','13844444444',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-21 14:07:18',NULL,_binary '\0',_binary '\0'),(7,'我就试试','$2a$10$TX9SiF3741G1Q2sjdcHwRecJpd39P0zsH60VZTqqzUBHKVjDzEPUy','19950229346',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-01-22 10:01:21',NULL,_binary '\0',_binary '\0'),(8,'季节','$2a$10$opYA1p3ue78a5eqy6aVkCeweGvKWG9rHwAe2Es8kc2rEetN.b5FUK','17882451908',0,0,NULL,NULL,3,NULL,'avatar/default.jpg',NULL,'2019-02-14 11:14:55',NULL,_binary '\0',_binary '\0');
+INSERT INTO `tb_member` VALUES (1,'春宵艳阳天','$2a$10$MdH5f5eswbBWotTLrPK6oO8aPf.mVDccuCe7BP7Z28zGfz0CwfwyO','13888888888',0,0,'周围','511024199905051751',3,NULL,'default.jpg',NULL,'2019-01-12 20:16:52',NULL,_binary '\0',_binary ''),(2,'踏遍三江六案','$2a$10$8/w/p1pI3Gk9GIRa0ERAwedmS85MSz8HPXDpHIAk1rCYPSj8u3RFW','13811111111',0,0,'岳少杰','511024199905051751',3,NULL,'default.jpg',NULL,'2019-01-12 20:30:37',NULL,_binary '\0',_binary ''),(3,'大宝剑','$2a$10$4P8eVgsk5ebSHRuOBl0MRe5n7PKFkVQDkSkbesH1oC6CrtdltmO3S','17888888888',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-01-18 17:34:22',NULL,_binary '\0',_binary '\0'),(4,'天空','$2a$10$EuaXsHNna29WnkAWMYWAM.SUxRtewJh9GnvN7Ynii5i8qmYoe45Be','13822222222',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-01-21 13:50:01',NULL,_binary '\0',_binary '\0'),(5,'德玛西亚','$2a$10$ERCayzbDTJoxWlCPp5ePZ.ZvWTbEQHZwPZQPFs1Ll8tV4Iop/97YG','13833333333',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-01-21 14:04:16',NULL,_binary '\0',_binary '\0'),(6,'无尽的黑夜','$2a$10$8wCRkxK0txgu2N1BsCg31OMDvp7MjX8Qxua3fgy6mqcdsKJ8R/f4G','13844444444',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-01-21 14:07:18',NULL,_binary '\0',_binary '\0'),(7,'我就试试','$2a$10$TX9SiF3741G1Q2sjdcHwRecJpd39P0zsH60VZTqqzUBHKVjDzEPUy','19950229346',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-01-22 10:01:21',NULL,_binary '\0',_binary '\0'),(8,'季节','$2a$10$opYA1p3ue78a5eqy6aVkCeweGvKWG9rHwAe2Es8kc2rEetN.b5FUK','17882451908',0,0,NULL,NULL,3,NULL,'default.jpg',NULL,'2019-02-14 11:14:55',NULL,_binary '\0',_binary '\0');
 /*!40000 ALTER TABLE `tb_member` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -543,7 +548,7 @@ DROP TABLE IF EXISTS `tb_order`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `tb_order` (
   `_id` int(11) NOT NULL AUTO_INCREMENT,
-  `orderno` char(16) NOT NULL,
+  `orderno` varchar(16) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `mname` varchar(40) NOT NULL,
   `reallyName` varchar(20) NOT NULL,
   `address` varchar(50) NOT NULL,
@@ -560,7 +565,7 @@ CREATE TABLE `tb_order` (
   `mid` int(11) NOT NULL,
   `shop_id` varchar(11) NOT NULL,
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -569,6 +574,7 @@ CREATE TABLE `tb_order` (
 
 LOCK TABLES `tb_order` WRITE;
 /*!40000 ALTER TABLE `tb_order` DISABLE KEYS */;
+INSERT INTO `tb_order` VALUES (1,'5969701901199248','踏遍三江六案','叶谱','成都市武侯区机投镇西部智谷D区','13586623793',90,0,'中通快递','无',_binary '\0',_binary '\0',_binary '\0','2019-02-19 00:00:00',_binary '\0',1,'13811111111');
 /*!40000 ALTER TABLE `tb_order` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -587,7 +593,7 @@ CREATE TABLE `tb_orderDetail` (
   `number` int(11) NOT NULL,
   `creaTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -596,6 +602,7 @@ CREATE TABLE `tb_orderDetail` (
 
 LOCK TABLES `tb_orderDetail` WRITE;
 /*!40000 ALTER TABLE `tb_orderDetail` DISABLE KEYS */;
+INSERT INTO `tb_orderDetail` VALUES (1,'5969701901199248',2,13888,1,'2019-02-21 15:48:00');
 /*!40000 ALTER TABLE `tb_orderDetail` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -692,7 +699,7 @@ CREATE TABLE `tb_store` (
   `nickname` varchar(20) NOT NULL,
   `click` int(11) DEFAULT '0',
   `storeStatus` bit(1) NOT NULL DEFAULT b'0',
-  `isAudit` bit(1) NOT NULL DEFAULT b'0',
+  `isAudit` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `logo` varchar(50) NOT NULL DEFAULT 'default.jpg',
   PRIMARY KEY (`_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
@@ -704,7 +711,7 @@ CREATE TABLE `tb_store` (
 
 LOCK TABLES `tb_store` WRITE;
 /*!40000 ALTER TABLE `tb_store` DISABLE KEYS */;
-INSERT INTO `tb_store` VALUES (1,'卖电脑',1,'春宵艳阳天',0,_binary '\0',_binary '\0','default.jpg'),(2,'卖冰箱',2,'踏遍三江六案',0,_binary '',_binary '\0','default.jpg');
+INSERT INTO `tb_store` VALUES (1,'卖电脑',1,'春宵艳阳天',58,_binary '\0',1,'default.jpg'),(2,'卖衣服',2,'踏遍三江六案',70,_binary '\0',1,'default.jpg');
 /*!40000 ALTER TABLE `tb_store` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -717,4 +724,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-02-19  2:35:44
+-- Dump completed on 2019-02-24 21:28:48
