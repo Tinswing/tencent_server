@@ -1,0 +1,16 @@
+module.exports = {
+        secretOrKey: 'youaremysunshine',
+        tokenKey: 'yuelaiyuebudong',
+        // aliyun sms key
+        accessKeyId: 'LTAIhtjgtRLPvhLd',
+        secretAccessKey: '24xAFXciuyMC7GwPeWX8KIK6kvswoc',
+        // cloud mysql
+        mysqlhost: '118.126.108.36',
+        mysqluser: 'root',
+        mysqlpwd: 'ChoicePerfect.666',
+        // alipay keys
+        alipayAppId: '2016092400588540',
+        alipayPrivateKey: 'MIIEpAIBAAKCAQEApu8juvzEvuabH7KlNOZNFuJslxcgVIBQ9I5r0BQQpH6jlILE7rV7/0ad02YrJLZSK+ynyOob/KQqECGmhcx+OI01vo7tRt6XCmc0a0oqcA9BWap5zzaK/SjZ6Irah/8H60zb/7oDAAn5ApyXAIMPNCwhixqcz/4T5/ZbSA6Yl/dMBtmLP8YqcIQRTgQsCLEPlcqDTqnefms8NtuX5E45zP2GIAPMEq2dDHXGDPgNrcMq87td4eGxqI6kPPhiYA7uASACcd7kug2SU2N0Fon03JWWOx7pK0eSsic8+YHa0VhWJ5sYfI/x91bXNG3baOLGUnuKrkXP3LdY3v8vZ1rq3QIDAQABAoIBAQCGJZxH8kJEyloUIeJC3WNLpY7v58SyQx9LN3wKDWXGWoInoOKSlULcxCmmLO80pFLqO1YlzYPKBT5MEk6YLNmtpkRvKrogflVQJdlo8oOh45B3dthGHSWaBQ7/oT21lcsOWohcO2WXzWvOnnl2DtvT6DbYav1i42GpwT5fbGNRkjuScJQtKC/UwinFWK4i6D2VQI7XTOJ72ir89a0Ji4DiDbR7gRV4WJ23e6Sa348CMqWM2dTb2WJfndWgampxWkVo0QnbtkFY83KVEXb/EC5DSYBW0iRIH2uz24oqBU89X5K5I1tBUGPifwYJN6fboB2kWGWhlWG8LcTsrsDLh71dAoGBANX+nsRrIlrFmg5jxTsOvECx2RFuftVfAx13fjeXHRJMDSNlGND+GvRJomgJiLI8Y8bEZSRIhTm0w/jAZWCUXYLJCDn1NShhfoAuqU46PbI0f7/OOH8KtvSFRP4be9hyi63vfE3x5ACHvkB1TeOfinkJaPRbIsU4sC3SxrpS3J3fAoGBAMezspSjW7HbHW10PDs/kA75awBQ0PWHlShBPYIPO3AbwZjF0/CvhhfsvpJjIsdo6BYYxoSzpJp6uEtgG8i5jbJ3EFj4Fz35y95bjtn265W/K8Hctpti7DVCyS6+6os4nO6kA0HOSKhx64Xud4C8i9iBLpOS1Y/Z8VtS+kE48pbDAoGBAK8wvaAGKWDwxtei/HQF8z5vm0r3D+T03OMB0ZYHI6i4FEV23aMzdLOrmMbdj0iDwheW70qOCGuevpVmRViU/h01IYP5aCR/9IVSLg86BQpginlnhb8T8YYrmLkDnRctZ4blOfnB3yxD9RBmOHbyRPYkKwVpmwSlDS7mkQU3EyA3AoGAFKHhOnAiQh7kTHGs42YuyQ1F29N9s1Bdvbn3098lAfEsME+IFR7dWM1x5wftCPMyv02x/PXedMNnFQqJ9FQParfYbYi8Rf/v6zpEaQqUznTg3XejOiyfQOV0iarZ6qZfuFwjpgHdCeIzNjQsDpXsUOMP39lUzTb0M74/8ssibScCgYADxcTEd9XzeyRF8uknPOcqtr035yN3CK/YZpHsfmPuAMdqLJDxmQi2bO2SfG0CuSt9Wfi3ZSdwo+Pgefg+2kaL0xoiESKs2latm29737XnbTIJpADJOP7qcQQbkupi41yCRezcBbCdAqg6dJPWwQ4RLI7wOdKWycyjaPsBYv/KDQ==',
+        alipayPublicKey: 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzjBozIsNA0VQVNHetU+dJMhqV0IfTI9Y/u7GxX40NpT76KmaZ4b5tuHXiqr4W/FYScv+JMHzIzUl8mGYjRQV4oPWXXuQ1nK2znLHVvcpX9i4dMngZplaavE5yE+qaxRahulCrPm3LnVgrcc4C1DlHRcbkTeVkM7lmlX4e1l8QOYZQqIQud6gTuvgMqvRhQXCUElM6Q2YxHTXTlKzhgv/SL7BiCcNOuWQ4L89yY26i106f03OM2CsoNABWjiy6T6+HkWBlDn+fhzCP2dObkec7eEQEhlN9lsq3lMXLa8DrpejhOAMbCZVUJdfggfJg950pCEB7xKFRXEdFLy0UdkYGwIDAQAB',
+        alipaySecret: 'youaremysunshine'
+}
